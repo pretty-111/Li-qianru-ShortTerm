@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="short icon" href="../Resource/nav41.png">
+    <link rel="stylesheet" href="../CSS/ExternalStyle.css">
+    <script type="text/javascript" src="../JS/CommonJS.js" ></script>
+    <title>平台风采</title>
+    <style>
+        article{
+            margin: 20px;
+        }
+        h3{
+            color: red;
+            font-size: 18px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #dddddd;
+        }
+        p{
+            font-size: 12px;
+            line-height: 2em;
+            text-indent: 2em;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <!--是用来搬少量文字用的标签-->
+    <span>小滴服务</span>
+</header>
+<!--第二部分-->
+<section class="DS_second_section">
+    <!--用来加载图片用的标签-->
+    <img src="../Resource/banner4.png" alt="哥,请检查您的手机网络!">
+</section>
+<!--第三部分-->
+<article>
+<!--<h3>公司简介</h3>-->
+    <!--<span>华杉科技（北京）有限公司</span>-->
+    <!--<p>-->
+        <!--华杉科技(北京)有限公司一直秉承“在高薪和经验的路上， 我们 只做行业第一”，致力于为整个互联网科技输送高技术人才、做好 每一款外包项目。-->
+    <!--</p>-->
+    <!--<p>-->
+        <!--华杉科技(北京)有限公司时一家既专注于培养高级IT技术人才，为学员提供定制化IT职业规划方案及意见咨询服务，又是国内领先的智能手机软件外包服务商。 公司原东方爱智技术总监，原58同城技术总监共同创立。-->
+    <!--</p>-->
+    <!--<p>-->
+        <!--华杉科技(北京)有限公司拥有业内知名的教研团队和雄厚的课程研发能力，课程的快捷迭代时刻紧跟当今较为流行的前沿技术，不同行业的外包项目作为支撑， 强有力的保证了学员的核心竞争李。强竞争力的一线技术人员和完善的外包服务流程充分保证了每一款项目的顺利执行。-->
+    <!--</p>-->
+    <h3 id="title"></h3>
+    <h4 id="subTitle"></h4>
+    <p id="info"></p>
+</article>
+<!--第四部分-->
+<footer>
+    <a href="DropletService.html"> <img src="../Resource/nav10.png" alt=""> <span>小滴服务</span> </a>
+    <a href="EntrepriseProject.html"> <img src="../Resource/nav20.png" alt=""> <span>企业项目</span> </a>
+    <a href="ServiceProcess.html"> <img src="../Resource/nav30.png" alt=""> <span>服务流程</span> </a>
+    <a href="PlatformPresence.html"> <img src="../Resource/nav41.png" alt=""> <span style="color: red">平台风采</span> </a>
+    <a href="MyDroplet.html"> <img src="../Resource/nav50.png" alt=""> <span>我的小滴</span> </a>
+</footer>
+</body>
+<script>
+
+
+    requestMethod('get','aboutus',"",function (returnStr) {
+        var title_content = document.getElementById("title");
+        var subTitle_content = document.getElementById("subTitle");
+        var info_content = document.getElementById("info");
+        title_content.innerHTML = returnStr.title;
+        subTitle_content.innerHTML = returnStr.subTitle;
+        info_content.innerHTML = returnStr.info;
+
+    });
+
+    // var xhr = new XMLHttpRequest();
+    // xhr.open('get','https://mockapi.eolinker.com/2ZhGVxjacb39010e6753bd9c02ee803e6e3bfeab6e8007c/aboutus');
+    // xhr.setRequestHeader("content-type","application/x-www-form-urlencoded");
+    // xhr.send();
+    // xhr.onreadystatechange = function () {
+    //     if(xhr.readyState==4 && xhr.status==200){
+    //         var res = JSON.parse(xhr.responseText);
+    //         var title_content = document.getElementById("title");
+    //         var subTitle_content = document.getElementById("subTitle");
+    //         var info_content = document.getElementById("info");
+    //         title_content.innerHTML = res.data.title;
+    //         subTitle_content.innerHTML = res.data.subTitle;
+    //         info_content.innerHTML = res.data.info;
+    //
+    //
+    //     }
+    // }
+
+
+</script>
+</html>

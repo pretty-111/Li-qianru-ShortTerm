@@ -1,0 +1,29 @@
+.DS_second_section ul{
+    list-style: none;
+    font-size: 14px;
+    font-weight: bolder;
+    height: 40px;
+    width: 100%;
+}
+.DS_second_section ul li{
+    float: left;
+    text-align: center;
+    width: 33.3%;
+    line-height: 40px;
+}
+.DS_second_section ul li a{
+    text-decoration: none;
+    color: black;
+}
+h6{
+    color: grey;
+    text-align: center;
+    /*margin-top: -10px;*/
+}
+h5{
+    text-align: center;
+}
+p{
+    font-size: 12px;
+    line-height: 2em;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="short icon"  href="../Resource/nav51.png">
+    <link rel="stylesheet" href="../CSS/ExternalStyle.css">
+    <title>我的小滴</title>
+    <style>
+        .MD_External_div{
+            width: 100%;
+            position: relative;
+        }
+        .MD_bg_img{
+            width: 100%;
+        }
+        .MD_inner_div{
+            left: 50%;
+            top: 50%;
+            position: absolute;
+            width: 66px;
+            height: 120px;
+            margin-left: -33px;
+            margin-top: -60px;
+        }
+        .MD_inner_div span{
+            display: block;
+        }
+        .MD_inner_div button{
+            background: rgb(32,131,204);
+            width: 66px;
+            height: 20px;
+        }
+        .MD_buttom_div{
+            width: 100%;
+            /*background: green;*/
+        }
+        .MD_buttom_inner_div{
+            width: 90%;
+            background: white;
+            height: 50px;
+            line-height: 50px;
+            margin: 10px auto;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+        .MD_left_img{
+            float: left;
+            margin-left: 10px;
+            margin-right: 20px;
+            margin-top: 15px;
+        }
+        .MD_right_img{
+            float: right;
+            margin-right: 10px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <span>我的小滴</span>
+</header>
+<div class="MD_External_div">
+    <img class="MD_bg_img" src="../Resource/banner5.png">
+    <div class="MD_inner_div">
+        <img class="MD_head_img" src="../Resource/head.png">
+        <span id="M_userName"></span>
+        <script>
+            document.getElementById("M_userName").innerHTML = window.localStorage.getItem("userName");
+
+        </script>
+        <button id="MD_btn">退出登录</button>
+        <script>
+            var btn = document.querySelector("#MD_btn");
+            btn.onclick = function () {
+                window.localStorage.removeItem("userName");
+                location.href = "index.html";
+            }
+        </script>
+    </div>
+</div>
+<div class="MD_buttom_div">
+    <div class="MD_buttom_inner_div">
+        <img class="MD_left_img" src="../Resource/gr_1.png">
+        <span>我的客户</span>
+        <img class="MD_right_img" src="../Resource/jt.png">
+    </div>
+</div>
+<div class="MD_buttom_div">
+    <div class="MD_buttom_inner_div">
+        <img class="MD_left_img" src="../Resource/gr_2.png">
+        <span>查询余额</span>
+        <img class="MD_right_img" src="../Resource/jt.png">
+    </div>
+</div>
+<div class="MD_buttom_div">
+    <div class="MD_buttom_inner_div">
+        <img class="MD_left_img" src="../Resource/gr_3.png">
+        <span>历史记录</span>
+        <img class="MD_right_img" src="../Resource/jt.png">
+    </div>
+</div>
+<div class="MD_buttom_div">
+    <div class="MD_buttom_inner_div">
+        <img class="MD_left_img" src="../Resource/gr_4.png">
+        <span>修改密码</span>
+        <img class="MD_right_img" src="../Resource/jt.png">
+    </div>
+</div>
+<div class="MD_buttom_div">
+    <div class="MD_buttom_inner_div">
+        <img class="MD_left_img" src="../Resource/gr_4.png">
+        <span>修改密码</span>
+        <img class="MD_right_img" src="../Resource/jt.png">
+    </div>
+</div>
+<div class="MD_buttom_div">
+    <div class="MD_buttom_inner_div">
+        <img class="MD_left_img" src="../Resource/gr_4.png">
+        <span>修改密码</span>
+        <img class="MD_right_img" src="../Resource/jt.png">
+    </div>
+</div>
+<div class="MD_buttom_div">
+    <div class="MD_buttom_inner_div">
+        <img class="MD_left_img" src="../Resource/gr_4.png">
+        <span>修改密码</span>
+        <img class="MD_right_img" src="../Resource/jt.png">
+    </div>
+</div>
+<footer>
+    <a href="DropletService.html"> <img src="../Resource/nav10.png" alt=""> <span>小滴服务</span> </a>
+    <a href="EntrepriseProject.html"> <img src="../Resource/nav20.png" alt=""> <span>企业项目</span> </a>
+    <a href="ServiceProcess.html"> <img src="../Resource/nav30.png" alt=""> <span>服务流程</span> </a>
+    <a href="PlatformPresence.html"> <img src="../Resource/nav40.png" alt=""> <span>平台风采</span> </a>
+    <a href="MyDroplet.html"> <img src="../Resource/nav51.png" alt=""> <span style="color: red">我的小滴</span> </a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(244,244,246);
+    margin-bottom: 60px;
+    padding-top: 44px;
+}
+header{
+    background: cornflowerblue;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    line-height: 44px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    /*//置于最上层*!*/
+}
+.DS_second_section img{
+    width: 100%;
+    margin-bottom: -4px;
+
+}
+footer{
+    display: table;
+    width: 100%;
+    background: black;
+    height: 49px;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+footer a{
+    display: table-cell;
+    width: 20%;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+footer a span{
+    display: block;
+    font-size: 12px;
+    color: white;
+}
+
+footer a img{
+    width: 18px;
+}
